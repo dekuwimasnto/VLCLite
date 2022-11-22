@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you want to delete current item? Once deleted, it cannot be recovered."
+        android:textSize="14sp"
+        android:textStyle="bold"/>
+    <Space
+        android:layout_height="1dp"
+        android:layout_width="match_parent" />
+    <LinearLayout
+        android:id="@+id/Yes"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_check_24"
+            android:layout_width="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes, confirm deletion"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/No"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_close_24"
+            android:layout_width="20dp"
+            android:layout_marginRight="10dp"
+
+            android:layout_height="20dp"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No, stay"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        />
+    </LinearLayout>
+
+</LinearLayout>
